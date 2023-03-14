@@ -1,0 +1,141 @@
+
+<html>
+<h1 style="backgraound: white"><center>Hotel Guest Registration Form</center></h1>
+</html>
+<body bgcolor="darkblue">
+<table cellpadding="10" width="" bgcolor="white" align="center"
+cellspacing="10">
+<body>
+  <form id="registration-form">
+    <tr>
+    <td><label for="name">Name:</label></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="name" name="name" placeholder="firstname" required ></td>
+    <td><input type="text" id="name" name="name" placeholder="Lastname" required></td>
+    </tr>
+    <tr>
+    <td><label for="email">Email:</label></td>
+    <td><label for="phone">Phone Number:</label></td>
+    </tr>
+    <tr>
+    <td><input type="email" id="email" name="email" required></td>
+    <td><input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required pattern="[0-9]{10}"></td>
+    </tr>
+    <tr>
+    <td><label for="text">example@example.com</label></td>
+    <td><label for="text">please enter valid number</label></td>
+    </tr>
+        <td><label for="password">Password:</label></td>
+    </tr>
+      <tr>
+    <td><input type="password" id="password" name="password" required minlength="14" maxlength="20"></td>
+    </tr>
+    <tr>
+    <td><label for="text">Address:</label></td>
+    </tr>
+      <tr>
+    <td><input type="text" id="name" name="name" required ></td>
+    </tr>
+        <tr>
+    <td><label for="text">Street Address:</label></td>
+    </tr>
+      <tr>
+    <td><input type="text" id="name" name="name" required ></td>
+    </tr>
+     <tr>
+    <td><label for="text">Street Address Line 2:</label></td>
+    </tr>
+      <tr>
+    <td><input type="text" id="name" name="name" placeholder="City" required ></td>
+    <td><input type="text" id="name" name="name" placeholder="State / Province" required ></td>
+    </tr>
+     <tr>
+    <td><input type="text" id="name" name="name" placeholder="Postal / Zip code" required ></td>
+    </tr>
+    <tr>
+        <td><label for="text">Booking Information</label></td>
+    </tr>
+    <tr>
+        <td><label for="text">check-in date</label></td>
+        <td><label for="text">check-out date</label></td>
+    </tr>
+    <tr>
+    <td><input type="date" id="checkin" name="checkin" placeholder="MM-DD-YYYY" required ></td>
+    <td><input type="date" id="checkout" name="checkout" placeholder="MM-DD-YYYY" required ></td>
+    </tr>
+    <tr>
+        <td><label for="text">date</label></td>
+        <td><label for="text">date</label></td>
+    </tr>
+    <tr>
+        <td><label for="text">Pick-up Location</label></td>
+    </tr>
+    <tr>
+    <td><input type="text" id="name" name="name" required ></td>
+    </tr>
+        <tr>
+    <td><label for="text">Street Address:</label></td>
+    </tr>
+      <tr>
+    <td><input type="text" id="name" name="name" required ></td>
+    </tr>
+     <tr>
+    <td><label for="text">Street Address Line 2:</label></td>
+    </tr>
+      <tr>
+    <td><input type="text" id="name" name="name" placeholder="City" required ></td>
+    <td><input type="text" id="name" name="name" placeholder="State / Province" required ></td>
+    </tr>
+     <tr>
+    <td><input type="text" id="name" name="name" placeholder="Postal / Zip code" required ></td>
+    </tr>
+        <tr>
+            <td>
+                Room Type
+            </td>
+            <td>
+                Smoking
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <select>
+                    <option>Please Select</option>
+                    <option>Single($100)</option>
+                    <option>Double($100)</option>
+                    <option>Queen($200)</option>
+                    <option>King($210</option>
+                    <option>2-Bedroom($350)</option>
+                    <option>Suite($500)</option>
+                </select>
+            </td>
+            <td>
+                <select>
+                    <option>Please Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </td>
+        </tr>
+
+
+
+    <tr>
+    <label for="text"></label>
+    <td><input type="submit" value="Register"></td>
+    </tr>
+  </form>
+
+  <script>
+    const form = document.querySelector('#registration-form');
+    form.addEventListener('Register', (event) => {
+      event.preventDefault();
+      const name = form.elements['name'].value;
+      const email = form.elements['email'].value;
+      const phone = form.elements['phone'].value;
+      const password = form.elements['password'].value;
+      console.log(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPassword: ${password}`);
+  </script>
+</body>
+</html>
